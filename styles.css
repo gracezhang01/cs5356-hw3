@@ -208,6 +208,7 @@ section h2 {
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     padding: 30px;
+    overflow-x: auto;
 }
 
 
@@ -221,6 +222,10 @@ section h2 {
     border-radius: 10px;
     padding: 20px;
     transition: transform 0.3s;
+    overflow: hidden; 
+    min-width: 600px;
+    word-wrap: break-word;
+    white-space: normal;
 }
 
 .experience-grid:hover {
@@ -238,12 +243,18 @@ section h2 {
     font-weight: bold;
     color: #69a7d4;
     margin-bottom: 10px;
+    overflow-wrap: break-word;
+    word-break: break-word; 
+    white-space: normal;
 }
 
 .project-info p {
     font-size: 1.1em;
     color: #555555;
     line-height: 1.6;
+    overflow-wrap: break-word;
+    word-break: break-word; 
+    white-space: normal;
 }
 
 .experience-grid img:hover {
@@ -375,7 +386,13 @@ section h2 {
 
 @media (max-width: 768px) {
     .experience-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; 
+        text-align: center;
+        min-width: auto;  
+        word-wrap: break-word;  
+    }
+
+    .project-info {
         text-align: center;
     }
 
@@ -396,6 +413,12 @@ section h2 {
 
     .skill {
         padding: 10px 8px;
+    }
+    .experience-title {
+        font-size: 1.5em; 
+    }
+    .project-info p {
+        font-size: 1em;
     }
 
     .project-info .experience-title,
