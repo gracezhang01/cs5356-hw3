@@ -3,10 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Professional Website</title>
+    <title>GZ👒</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to My Professional Website</h1>
-    <p>This site is hosted using GitHub Pages.</p>
+    <header class="navbar">
+        <div class="logo">
+            <span>⌨️ My Professional Website</span>
+        </div>
+    </header>
+    <main class="hero">
+        <div class="text-content">
+            <h1>Hey, I'm Grace!</h1>
+            <p>I am a software engineer. I have experience in backend engineering and machine learning research.</p>
+            <p>When I am not busy coding, I enjoy skiing, hiking, photography, and adventure.</p>
+            <div class="buttons">
+                <a href="Grace_Zhuoqin_Zhang_Resume_CS 2.pdf" class="btn">Resume</a>
+            </div>
+        </div>
+        <img src="images/me.png" alt="Avatar" class="avatar">
+    </main>
+    <section id="skills" class="skills fade-in">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill">Python</div>
+            <div class="skill">Java</div>
+            <div class="skill">C/C++</div>
+            <div class="skill">Unity/C#</div>
+            <div class="skill">MySQL</div>
+            <div class="skill">HTML/CSS</div>
+            <div class="skill">PyTorch</div>
+            <div class="skill">Tensorflow</div>
+        </div>
+    </section>
+    <section id="exp">
+        <h2>My Experiences</h2>
+        <div class="experience-container">
+            <div class="experience-grid">
+                <div class="project-info">
+                    <div class="experience-title">SWE @ Infinitrips.ai</div>
+                    <p>As a Founding Software Engineer at Infinitrips.ai, I collaborate with a team of four to develop an AI-powered app, showcasing its unique value to potential investors. My role focuses on designing and implementing backend storage and functionality using AWS Amplify while integrating APIs with the frontend to ensure seamless performance.</p>
+                </div>
+            </div>
+    
+            <div class="experience-grid ai-researcher" id="roar-ai">
+                <div class="project-info">
+                    <div class="experience-title">AI Researcher @ ROAR AI Racing</div>
+                    <p>As an AI Researcher at ROAR AI Racing, I led a team of three to develop advanced lane detection algorithms for autonomous racing cars in the Indy Autonomous Challenge. I initiated a SAM serverless backend using Docker on CVAT to automate and streamline data labeling, while designing a YOLO-v8 training pipeline for lane detection, optimizing the model through quantization-aware training. Additionally, I enhanced the reinforcement learning pipeline by integrating real-time visualization of car waypoint data during each observation step, using OpenAI Gym to improve training insights.</p>
+                </div>
+                <a href="https://roar.berkeley.edu/" id="external-link" target="_blank" style="display: none;"></a>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="projects" class="projects fade-in">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <div class="project-info">
+                <h3>Gravity Sketch Clone</h3>
+                <p>In a team of three, I developed a Gravity Sketch clone using Unity, replicating core functionalities for 3D modeling and object manipulation. The application allows users to select spheres, create various primitive object types, and scale objects along the X, Y, and Z axes, providing an intuitive and interactive design experience.</p>
+            </div>
+            <video controls width = "100%" muted loop>
+                <source src="vid.MP4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+    <script src="fetch.js" defer></script>
+    <section id="dog" class="dog-section fade-in">
+        <h2>Daily Appreciation of my Fav Animal🐶</h2>
+        <div class="dog-grid">
+            <img id="dog-image" src="" alt="Random Dog">
+        </div>
+        <div class="buttons">
+            <button id="fetch-dog" class="btn">Get Another Cutie💕</button>
+        </div>
+    </section>
 </body>
 </html>
